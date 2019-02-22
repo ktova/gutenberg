@@ -88,7 +88,7 @@ Clicks on More Menu item, searches for the button with the text provided and cli
 
 ### createEmbeddingMatcher
 
-[src/index.js#L48-L48](src/index.js#L48-L48)
+[src/index.js#L49-L49](src/index.js#L49-L49)
 
 Creates a function to determine if a request is embedding a certain URL.
 
@@ -102,7 +102,7 @@ Creates a function to determine if a request is embedding a certain URL.
 
 ### createJSONResponse
 
-[src/index.js#L48-L48](src/index.js#L48-L48)
+[src/index.js#L49-L49](src/index.js#L49-L49)
 
 Respond to a request with a JSON response.
 
@@ -141,7 +141,7 @@ Creates new URL by parsing base URL, WPPath and query string.
 
 ### createURLMatcher
 
-[src/index.js#L48-L48](src/index.js#L48-L48)
+[src/index.js#L49-L49](src/index.js#L49-L49)
 
 Creates a function to determine if a request is calling a URL with the substring present.
 
@@ -322,7 +322,7 @@ Performs log in with specified username and password.
 
 ### mockOrTransform
 
-[src/index.js#L48-L48](src/index.js#L48-L48)
+[src/index.js#L49-L49](src/index.js#L49-L49)
 
 Mocks a request with the supplied mock object, or allows it to run with an optional transform, based on the
 deserialised JSON response for the request.
@@ -350,15 +350,21 @@ event occurs without a related target (i.e. focus loss).
 
 Clicks on the button in the header which opens Document Settings sidebar when it is closed.
 
-### openPublishPanel
+### openGlobalInserter
 
 [src/index.js#L29-L29](src/index.js#L29-L29)
+
+Opens the global inserter
+
+### openPublishPanel
+
+[src/index.js#L30-L30](src/index.js#L30-L30)
 
 Opens the publish panel.
 
 ### pressKeyTimes
 
-[src/index.js#L30-L30](src/index.js#L30-L30)
+[src/index.js#L31-L31](src/index.js#L31-L31)
 
 Presses the given keyboard key a number of times in sequence.
 
@@ -373,7 +379,7 @@ Presses the given keyboard key a number of times in sequence.
 
 ### pressKeyWithModifier
 
-[src/index.js#L31-L31](src/index.js#L31-L31)
+[src/index.js#L32-L32](src/index.js#L32-L32)
 
 Performs a key press with modifier (Shift, Control, Meta, Alt), where each modifier
 is normalized to platform-specific modifier.
@@ -385,7 +391,7 @@ is normalized to platform-specific modifier.
 
 ### publishPost
 
-[src/index.js#L32-L32](src/index.js#L32-L32)
+[src/index.js#L33-L33](src/index.js#L33-L33)
 
 Publishes the post, resolving once the request is complete (once a notice
 is displayed).
@@ -396,7 +402,7 @@ is displayed).
 
 ### publishPostWithPrePublishChecksDisabled
 
-[src/index.js#L33-L33](src/index.js#L33-L33)
+[src/index.js#L34-L34](src/index.js#L34-L34)
 
 Publishes the post without the pre-publish checks,
 resolving once the request is complete (once a notice is displayed).
@@ -407,7 +413,7 @@ resolving once the request is complete (once a notice is displayed).
 
 ### saveDraft
 
-[src/index.js#L34-L34](src/index.js#L34-L34)
+[src/index.js#L35-L35](src/index.js#L35-L35)
 
 Saves the post as a draft, resolving once the request is complete (once the
 "Saved" indicator is displayed).
@@ -418,7 +424,7 @@ Saves the post as a draft, resolving once the request is complete (once the
 
 ### searchForBlock
 
-[src/index.js#L35-L35](src/index.js#L35-L35)
+[src/index.js#L36-L36](src/index.js#L36-L36)
 
 Search for block in the global inserter
 
@@ -428,7 +434,7 @@ Search for block in the global inserter
 
 ### selectBlockByClientId
 
-[src/index.js#L36-L36](src/index.js#L36-L36)
+[src/index.js#L37-L37](src/index.js#L37-L37)
 
 Given the clientId of a block, selects the block on the editor.
 
@@ -438,7 +444,7 @@ Given the clientId of a block, selects the block on the editor.
 
 ### setBrowserViewport
 
-[src/index.js#L37-L37](src/index.js#L37-L37)
+[src/index.js#L38-L38](src/index.js#L38-L38)
 
 Sets browser viewport to specified type.
 
@@ -448,7 +454,7 @@ Sets browser viewport to specified type.
 
 ### setPostContent
 
-[src/index.js#L38-L38](src/index.js#L38-L38)
+[src/index.js#L39-L39](src/index.js#L39-L39)
 
 Sets code editor content
 
@@ -462,7 +468,7 @@ Sets code editor content
 
 ### setUpResponseMocking
 
-[src/index.js#L48-L48](src/index.js#L48-L48)
+[src/index.js#L49-L49](src/index.js#L49-L49)
 
 Sets up mock checks and responses. Accepts a list of mock settings with the following properties:
 
@@ -493,7 +499,7 @@ If none of the mock settings match the request, the request is allowed to contin
 
 ### switchEditorModeTo
 
-[src/index.js#L39-L39](src/index.js#L39-L39)
+[src/index.js#L40-L40](src/index.js#L40-L40)
 
 Switches editor mode.
 
@@ -503,21 +509,21 @@ Switches editor mode.
 
 ### switchUserToAdmin
 
-[src/index.js#L40-L40](src/index.js#L40-L40)
+[src/index.js#L41-L41](src/index.js#L41-L41)
 
 Switches the current user to the admin user (if the user
 running the test is not already the admin user).
 
 ### switchUserToTest
 
-[src/index.js#L41-L41](src/index.js#L41-L41)
+[src/index.js#L42-L42](src/index.js#L42-L42)
 
 Switches the current user to whichever user we should be
 running the tests as (if we're not already that user).
 
 ### toggleScreenOption
 
-[src/index.js#L42-L42](src/index.js#L42-L42)
+[src/index.js#L43-L43](src/index.js#L43-L43)
 
 Toggles the screen option with the given label.
 
@@ -528,7 +534,7 @@ Toggles the screen option with the given label.
 
 ### transformBlockTo
 
-[src/index.js#L43-L43](src/index.js#L43-L43)
+[src/index.js#L44-L44](src/index.js#L44-L44)
 
 Converts editor's block type.
 
@@ -538,7 +544,7 @@ Converts editor's block type.
 
 ### uninstallPlugin
 
-[src/index.js#L44-L44](src/index.js#L44-L44)
+[src/index.js#L45-L45](src/index.js#L45-L45)
 
 Uninstalls a plugin.
 
@@ -548,7 +554,7 @@ Uninstalls a plugin.
 
 ### visitAdminPage
 
-[src/index.js#L45-L45](src/index.js#L45-L45)
+[src/index.js#L46-L46](src/index.js#L46-L46)
 
 Visits admin page; if user is not logged in then it logging in it first, then visits admin page.
 
@@ -559,7 +565,7 @@ Visits admin page; if user is not logged in then it logging in it first, then vi
 
 ### waitForWindowDimensions
 
-[src/index.js#L46-L46](src/index.js#L46-L46)
+[src/index.js#L47-L47](src/index.js#L47-L47)
 
 Function that waits until the page viewport has the required dimensions.
 It is being used to address a problem where after using setViewport the execution may continue,
