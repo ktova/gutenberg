@@ -1,5 +1,5 @@
 /**
- * Opens the global inserter
+ * Opens the global block inserter.
  */
 export async function openGlobalInserter() {
 	await page.click( '.edit-post-header [aria-label="Add block"]' );
